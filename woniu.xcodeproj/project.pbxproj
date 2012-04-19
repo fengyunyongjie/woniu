@@ -176,6 +176,7 @@
 		18366F6415383027006CD387 /* scroller.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 18366F6215383027006CD387 /* scroller.tmx */; };
 		18366F6515383027006CD387 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 18366F6315383027006CD387 /* iTunesArtwork */; };
 		18BDBD3C153832370075A8A8 /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = 18BDBD3B153832370075A8A8 /* pig.png */; };
+		34185718153D5CE90095AFD5 /* GameLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34185717153D5CE90095AFD5 /* GameLayer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -502,6 +503,8 @@
 		18366F6215383027006CD387 /* scroller.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = scroller.tmx; sourceTree = "<group>"; };
 		18366F6315383027006CD387 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		18BDBD3B153832370075A8A8 /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
+		34185716153D5CE80095AFD5 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		34185717153D5CE90095AFD5 /* GameLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameLayer.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -563,6 +566,8 @@
 				18366F4C15382A03006CD387 /* GameScene.mm */,
 				18366F4D15382A03006CD387 /* GameObject.h */,
 				18366F4E15382A03006CD387 /* GameObject.m */,
+				34185716153D5CE80095AFD5 /* GameLayer.h */,
+				34185717153D5CE90095AFD5 /* GameLayer.mm */,
 				18366F4F15382A03006CD387 /* Player.h */,
 				18366F5015382A03006CD387 /* Player.mm */,
 				18366F5115382A03006CD387 /* ContactListener.h */,
@@ -1265,6 +1270,7 @@
 				18366DA615303095006CD387 /* RootViewController.m in Sources */,
 				18366DA915303095006CD387 /* HelloWorldLayer.mm in Sources */,
 				18366DAC15303095006CD387 /* GLES-Render.mm in Sources */,
+				34185718153D5CE90095AFD5 /* GameLayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
