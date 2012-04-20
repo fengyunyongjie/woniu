@@ -147,12 +147,27 @@
     location=[[CCDirector sharedDirector] convertToGL:location];
     b2Vec2 locationWorld=b2Vec2(location.x/PTM_RARIO,location.y/PTM_RARIO);
     
-    b2MouseJointDef md;
-    md.bodyA=groundBody;
-    md.bodyB=pig;
-    md.target=locationWorld;
-    md.maxForce=1000.0f * pig->GetMass();
-    mouseJoint=(b2MouseJoint*)world->CreateJoint(&md);
+    b2Fixture *pigFix=pig->GetFixtureList();
+    if(pigFix->TestPoint(locationWorld))
+    {
+        b2MouseJointDef md;
+        md.bodyA=groundBody;
+        md.bodyB=pig;
+        md.target=locationWorld;
+        md.maxForce=1000.0f * pig->GetMass();
+        mouseJoint=(b2MouseJoint*)world->CreateJoint(&md);
+    }
+    
+    b2Fixture *SnailFix=snail->GetFixtureList();
+    if(SnailFix->TestPoint(locationWorld))
+    {
+        b2MouseJointDef md;
+        md.bodyA=groundBody;
+        md.bodyB=snail;
+        md.target=locationWorld;
+        md.maxForce=1000.0f * pig->GetMass();
+        mouseJoint=(b2MouseJoint*)world->CreateJoint(&md);
+    }
 }
 -(void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     if(mouseJoint==nil) return;
