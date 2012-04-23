@@ -177,6 +177,11 @@
 		3423989415454249002B6DFA /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3423989315454249002B6DFA /* GLES-Render.mm */; };
 		3423989715454249002B6DFA /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3423989615454249002B6DFA /* PhysicsSprite.mm */; };
 		3423989915454249002B6DFA /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 3423989815454249002B6DFA /* blocks.png */; };
+		342398AD154544F5002B6DFA /* GameLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 342398AC154544F4002B6DFA /* GameLayer.mm */; };
+		342398B515454884002B6DFA /* VPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 342398B015454883002B6DFA /* VPoint.m */; };
+		342398B615454884002B6DFA /* VRope.mm in Sources */ = {isa = PBXBuildFile; fileRef = 342398B215454883002B6DFA /* VRope.mm */; };
+		342398B715454884002B6DFA /* VStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 342398B415454884002B6DFA /* VStick.m */; };
+		342398B915454A31002B6DFA /* rope.png in Resources */ = {isa = PBXBuildFile; fileRef = 342398B815454A31002B6DFA /* rope.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -535,6 +540,15 @@
 		3423989515454249002B6DFA /* PhysicsSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsSprite.h; sourceTree = "<group>"; };
 		3423989615454249002B6DFA /* PhysicsSprite.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhysicsSprite.mm; sourceTree = "<group>"; };
 		3423989815454249002B6DFA /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		342398AB154544F4002B6DFA /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		342398AC154544F4002B6DFA /* GameLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameLayer.mm; sourceTree = "<group>"; };
+		342398AF15454882002B6DFA /* VPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPoint.h; sourceTree = "<group>"; };
+		342398B015454883002B6DFA /* VPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPoint.m; sourceTree = "<group>"; };
+		342398B115454883002B6DFA /* VRope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRope.h; sourceTree = "<group>"; };
+		342398B215454883002B6DFA /* VRope.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VRope.mm; sourceTree = "<group>"; };
+		342398B315454883002B6DFA /* VStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VStick.h; sourceTree = "<group>"; };
+		342398B415454884002B6DFA /* VStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VStick.m; sourceTree = "<group>"; };
+		342398B815454A31002B6DFA /* rope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rope.png; path = Resources/rope.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -593,6 +607,14 @@
 		342396881545423F002B6DFA /* woniu */ = {
 			isa = PBXGroup;
 			children = (
+				342398AF15454882002B6DFA /* VPoint.h */,
+				342398B015454883002B6DFA /* VPoint.m */,
+				342398B115454883002B6DFA /* VRope.h */,
+				342398B215454883002B6DFA /* VRope.mm */,
+				342398B315454883002B6DFA /* VStick.h */,
+				342398B415454884002B6DFA /* VStick.m */,
+				342398AB154544F4002B6DFA /* GameLayer.h */,
+				342398AC154544F4002B6DFA /* GameLayer.mm */,
 				3423988C15454249002B6DFA /* AppDelegate.h */,
 				3423988D15454249002B6DFA /* AppDelegate.mm */,
 				3423988F15454249002B6DFA /* HelloWorldLayer.h */,
@@ -611,6 +633,7 @@
 		342396891545423F002B6DFA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				342398B815454A31002B6DFA /* rope.png */,
 				3423968A1545423F002B6DFA /* Default.png */,
 				3423968C1545423F002B6DFA /* fps_images.png */,
 				3423968E1545423F002B6DFA /* fps_images-hd.png */,
@@ -1189,6 +1212,7 @@
 				342396A01545423F002B6DFA /* iTunesArtwork in Resources */,
 				342397D915454246002B6DFA /* ChangeLog in Resources */,
 				3423989915454249002B6DFA /* blocks.png in Resources */,
+				342398B915454A31002B6DFA /* rope.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1347,6 +1371,10 @@
 				3423989115454249002B6DFA /* HelloWorldLayer.mm in Sources */,
 				3423989415454249002B6DFA /* GLES-Render.mm in Sources */,
 				3423989715454249002B6DFA /* PhysicsSprite.mm in Sources */,
+				342398AD154544F5002B6DFA /* GameLayer.mm in Sources */,
+				342398B515454884002B6DFA /* VPoint.m in Sources */,
+				342398B615454884002B6DFA /* VRope.mm in Sources */,
+				342398B715454884002B6DFA /* VStick.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1452,6 +1480,7 @@
 				3423989E15454249002B6DFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
