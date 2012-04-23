@@ -2,7 +2,7 @@
 //  main.m
 //  woniu
 //
-//  Created by  on 12-4-7.
+//  Created by cocoa on 12-4-23.
 //  Copyright __MyCompanyName__ 2012年. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 int main(int argc, char *argv[]) {
     
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");
+    int retVal = UIApplicationMain(argc, argv, nil, @"AppController");
     [pool release];
     return retVal;
 }
